@@ -5,7 +5,7 @@
 
 #define NUM_THREADS 250   // Número de hilos
 #define KEY_LENGTH 5   // Longitud de la clave (puede cambiar)
-#define TARGET_KEY "AAAAA" // Clave objetivo
+#define TARGET_KEY "X053S" // Clave objetivo
 
 int main() {
 
@@ -19,7 +19,6 @@ int main() {
     printf("Longitud de clave: %d\n", KEY_LENGTH);
     printf("Total de combinaciones posibles: %llu\n", total_combinations);
     printf("Hilos utilizados: %d\n", NUM_THREADS);
-    printf("=======================================\n");
 
     double start_time = omp_get_wtime();
     omp_set_num_threads(NUM_THREADS);
